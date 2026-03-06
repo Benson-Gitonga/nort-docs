@@ -312,6 +312,17 @@ body::after {
   line-height: 1.75 !important;
   font-weight: 300 !important;
 }
+.docs-intro ul li, .docs-intro ol li,
+.docs-section ul li, .docs-section ol li {
+  color: var(--text-secondary) !important;
+  font-size: 14px !important;
+  line-height: 1.75 !important;
+  font-weight: 300 !important;
+}
+.docs-intro ul li strong, .docs-section ul li strong {
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+}
 h5 {
   font-family: 'DM Mono', monospace !important;
   font-size: 11px !important;

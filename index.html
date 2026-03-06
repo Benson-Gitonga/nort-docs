@@ -69,7 +69,7 @@
                                     <span class="theme-icon-holder card-icon-holder me-2"><i class="fas fa-map-signs"></i></span>
                                     <span class="card-title-text">Introduction</span>
                                 </h5>
-                                <div class="card-text">What NORT is, why it was built, and how the three-layer architecture ties everything together — from Polymarket data to the dashboard.</div>
+                                <div class="card-text">What NORT is, how it works, and how the three-layer architecture connects Polymarket data, the backend, and both the web dashboard and Telegram bot.</div>
                                 <a class="card-link-mask" href="docs-page.html#section-1"></a>
                             </div>
                         </div>
@@ -80,9 +80,9 @@
                             <div class="card-body">
                                 <h5 class="card-title mb-3">
                                     <span class="theme-icon-holder card-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>
-                                    <span class="card-title-text">Installation</span>
+                                    <span class="card-title-text">Getting Started</span>
                                 </h5>
-                                <div class="card-text">How to clone, configure environment variables, and run the full stack locally with a single <code>docker-compose up</code>.</div>
+                                <div class="card-text">How to access NORT — via the live dashboard at nortapp.online, via Telegram commands, or by launching the full Mini App inside Telegram.</div>
                                 <a class="card-link-mask" href="docs-page.html#section-2"></a>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                                     <span class="theme-icon-holder card-icon-holder me-2"><i class="fas fa-box fa-fw"></i></span>
                                     <span class="card-title-text">API Reference</span>
                                 </h5>
-                                <div class="card-text">Full reference for every FastAPI endpoint — markets, signals, advice, paper trading, wallet, and the leaderboard.</div>
+                                <div class="card-text">All backend endpoints — fetching crypto and sports markets, retrieving ranked signals, requesting AI advice, placing paper trades, and querying wallet and leaderboard data.</div>
                                 <a class="card-link-mask" href="docs-page.html#section-3"></a>
                             </div>
                         </div>
@@ -108,7 +108,7 @@
                                     <span class="theme-icon-holder card-icon-holder me-2"><i class="fas fa-brain fa-fw"></i></span>
                                     <span class="card-title-text">Signals Engine</span>
                                 </h5>
-                                <div class="card-text">How the quant scoring pipeline works — liquidity filter, momentum score, volume spike score, composite ranking, and reason strings.</div>
+                                <div class="card-text">How markets are scored and ranked — the liquidity filter, momentum and volume spike criteria, HOT/WARM/COOL signal labels, and plain-English reason strings.</div>
                                 <a class="card-link-mask" href="docs-page.html#section-4"></a>
                             </div>
                         </div>
@@ -121,7 +121,7 @@
                                     <span class="theme-icon-holder card-icon-holder me-2"><i class="fas fa-robot fa-fw"></i></span>
                                     <span class="card-title-text">OpenClaw Agent</span>
                                 </h5>
-                                <div class="card-text">How the AI advice layer works — OpenRouter integration, prompt templates, tool calls, structured output, and the x402 payment gate.</div>
+                                <div class="card-text">How the AI advice layer works — context gathering, OpenRouter integration, and the structured analysis output including summary, risk factors, and a suggested position.</div>
                                 <a class="card-link-mask" href="docs-page.html#section-5"></a>
                             </div>
                         </div>
@@ -132,9 +132,9 @@
                             <div class="card-body">
                                 <h5 class="card-title mb-3">
                                     <span class="theme-icon-holder card-icon-holder me-2"><i class="fas fa-database fa-fw"></i></span>
-                                    <span class="card-title-text">Data Models</span>
+                                    <span class="card-title-text">Data &amp; Storage</span>
                                 </h5>
-                                <div class="card-text">The SQLite schema — all seven tables, their fields, relationships, and which component owns each one.</div>
+                                <div class="card-text">What NORT stores in its Neon PostgreSQL cloud database — markets, signals, users, paper trades, wallet balances, and leaderboard snapshots.</div>
                                 <a class="card-link-mask" href="docs-page.html#section-6"></a>
                             </div>
                         </div>
@@ -147,7 +147,7 @@
                                     <span class="theme-icon-holder card-icon-holder me-2"><i class="fas fa-laptop-code fa-fw"></i></span>
                                     <span class="card-title-text">Dashboard</span>
                                 </h5>
-                                <div class="card-text">The Next.js frontend — pages, components, API layer, design system, auth, and the Telegram WebApp integration.</div>
+                                <div class="card-text">The live web dashboard at nortapp.online — Feed, Signals, Trade, Leaderboard, Achievements, and Profile pages, plus the glassmorphism design system and Privy authentication.</div>
                                 <a class="card-link-mask" href="docs-page.html#section-7"></a>
                             </div>
                         </div>
@@ -160,7 +160,7 @@
                                     <span class="theme-icon-holder card-icon-holder me-2"><i class="fas fa-paper-plane fa-fw"></i></span>
                                     <span class="card-title-text">Telegram Bot</span>
                                 </h5>
-                                <div class="card-text">Bot command reference, the fast path vs agent path decision logic, and how the bot connects to the FastAPI backend.</div>
+                                <div class="card-text">All Telegram bot commands for markets, signals, portfolio, and AI advice — plus how to launch the full NORT dashboard as a Telegram Mini App.</div>
                                 <a class="card-link-mask" href="docs-page.html#section-8"></a>
                             </div>
                         </div>
@@ -173,7 +173,7 @@
                                     <span class="theme-icon-holder card-icon-holder me-2"><i class="fas fa-lightbulb fa-fw"></i></span>
                                     <span class="card-title-text">FAQs</span>
                                 </h5>
-                                <div class="card-text">Common questions about paper trading mode, the x402 payment flow, OpenRouter model swapping, and demo setup.</div>
+                                <div class="card-text">Common questions about paper trading, market categories, accessing NORT, AI advice, P&amp;L calculation, and using the Telegram Mini App.</div>
                                 <a class="card-link-mask" href="docs-page.html#section-9"></a>
                             </div>
                         </div>
@@ -188,9 +188,9 @@
         <div class="theme-bg-shapes-right"></div>
         <div class="theme-bg-shapes-left"></div>
         <div class="container">
-            <h3 class="mb-3">NORT is paper trading only.</h3>
+            <h3 class="mb-3">NORT is live at nortapp.online</h3>
             <div class="section-intro mb-4 single-col-max mx-auto">
-                No real funds. No real risk. <code>EXECUTION_MODE=PAPER</code> is always on. Every trade is simulated, every signal is real.
+                Crypto and sports prediction markets, AI-powered signals, and paper trading — accessible via browser or Telegram. No installation required.
             </div>
             <div class="pt-2 text-center">
                 <a class="btn btn-light" href="docs-page.html">Read Full Documentation <i class="fas fa-arrow-alt-circle-right ms-2"></i></a>
@@ -205,7 +205,7 @@
                 <li class="list-inline-item"><a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a></li>
                 <li class="list-inline-item"><a href="#"><i class="fa-brands fa-telegram fa-fw"></i></a></li>
             </ul>
-            <small class="copyright">NORT v1.0 · Built for demo · Paper trading only · <span style="color: var(--teal);">EXECUTION_MODE=PAPER</span></small>
+            <small class="copyright">NORT v1.0 · Paper trading only · <a href="https://www.nortapp.online/" target="_blank" style="color:var(--teal);">nortapp.online</a></small>
         </div>
     </footer>
 

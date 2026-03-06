@@ -307,28 +307,33 @@ body::after {
   margin-top: 32px !important;
 }
 .docs-intro p, .docs-section p {
-  color: var(--text-secondary) !important;
+  color: rgba(200, 225, 245, 0.92) !important;
   font-size: 14px !important;
   line-height: 1.75 !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
 }
 .docs-intro ul li, .docs-intro ol li,
 .docs-section ul li, .docs-section ol li {
-  color: var(--text-secondary) !important;
+  color: rgba(255, 255, 255, 0.92) !important;
   font-size: 14px !important;
-  line-height: 1.75 !important;
-  font-weight: 300 !important;
+  line-height: 1.85 !important;
+  font-weight: 400 !important;
 }
 .docs-intro ul li strong, .docs-section ul li strong {
-  color: var(--text-primary) !important;
+  color: var(--teal) !important;
   font-weight: 600 !important;
+}
+/* bullet marker colour */
+.docs-intro ul, .docs-section ul,
+.docs-intro ol, .docs-section ol {
+  color: rgba(255, 255, 255, 0.92) !important;
 }
 h5 {
   font-family: 'DM Mono', monospace !important;
   font-size: 11px !important;
   letter-spacing: 0.6px !important;
   text-transform: uppercase !important;
-  color: var(--text-muted) !important;
+  color: var(--teal) !important;
   margin-bottom: 12px !important;
 }
 
@@ -393,8 +398,8 @@ code {
   color: var(--text-secondary) !important;
   border-color: var(--glass-border) !important;
 }
-.table th, .table td { border-color: var(--glass-border) !important; padding: 12px 14px !important; font-size: 13px !important; }
-.table th { font-family: 'DM Mono', monospace !important; font-size: 10px !important; letter-spacing: 0.5px !important; text-transform: uppercase !important; color: var(--text-muted) !important; }
+.table th, .table td { border-color: var(--glass-border) !important; padding: 12px 14px !important; font-size: 13px !important; color: rgba(255,255,255,0.88) !important; }
+.table th { font-family: 'DM Mono', monospace !important; font-size: 10px !important; letter-spacing: 0.5px !important; text-transform: uppercase !important; color: var(--teal) !important; }
 .table-bordered { border: 1px solid var(--glass-border) !important; border-radius: var(--rsm) !important; overflow: hidden !important; }
 .theme-bg-light { background: var(--glass-bg) !important; }
 .table-striped > tbody > tr:nth-of-type(odd) > * { background: var(--glass-bg) !important; }

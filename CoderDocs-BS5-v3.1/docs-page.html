@@ -1,695 +1,899 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
-    <title>CoderDocs - Bootstrap Documentation Template For Software Projects</title>
-    
-    <!-- Meta -->
+    <title>NORT v1 — Full Documentation</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <meta name="description" content="Bootstrap Documentation Template For Software Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico"> 
-    
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome JS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NORT v1 — Polymarket AI Assistant Full Documentation">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script defer src="assets/fontawesome/js/all.min.js"></script>
-    
-    <!-- Plugins CSS -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
     <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
-
-    <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/nort-theme.css">
+</head>
 
-</head> 
-
-<body class="docs-page">    
-    <header class="header fixed-top">	    
+<body class="docs-page">
+    <header class="header fixed-top">
         <div class="branding docs-branding">
             <div class="container-fluid position-relative py-2">
                 <div class="docs-logo-wrapper">
-					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
-	                    <span></span>
-	                    <span></span>
-	                    <span></span>
-	                </button>
-	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/coderdocs-logo.svg" alt="logo"><span class="logo-text">Coder<span class="text-alt">Docs</span></span></a></div>    
-                </div><!--//docs-logo-wrapper-->
-	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
-	                <div class="top-search-box d-none d-lg-flex">
-		                <form class="search-form">
-				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-				        </form>
-	                </div>
-	
-					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
-						<li class="list-inline-item"><a href="#"><i class="fa-brands fa-github fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fa-brands fa-slack fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a></li>
-		            </ul><!--//social-list-->
-		            <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/" class="btn btn-primary d-none d-lg-flex">Download</a>
-	            </div><!--//docs-top-utilities-->
-            </div><!--//container-->
-        </div><!--//branding-->
-    </header><!--//header-->
-    
-    
-    <div class="docs-wrapper">
-	    <div id="docs-sidebar" class="docs-sidebar">
-		    <div class="top-search-box d-lg-none p-3">
-                <form class="search-form">
-		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-		        </form>
+                    <button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <div class="site-logo">
+                        <a class="navbar-brand" href="index.html">
+                            <span class="logo-text">NORT</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+                    <div class="top-search-box d-none d-lg-flex">
+                        <form class="search-form">
+                            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+                            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <span class="nort-live d-none d-lg-inline-flex mx-4">
+                        <span class="nort-live-dot"></span>v1.0 · Paper Trading
+                    </span>
+                    <ul class="social-list list-inline mx-md-3 mb-0 d-none d-lg-flex">
+                        <li class="list-inline-item"><a href="#"><i class="fa-brands fa-github fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa-brands fa-telegram fa-fw"></i></a></li>
+                    </ul>
+                    <a href="index.html" class="btn btn-primary d-none d-lg-flex">← Home</a>
+                </div>
             </div>
-		    <nav id="docs-nav" class="docs-nav navbar">
-			    <ul class="section-items list-unstyled nav flex-column pb-3">
-				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introduction</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Section Item 1.1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Section Item 1.2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Section Item 1.3</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Section Item 1.4</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">Section Item 1.5</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6">Section Item 1.6</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Installation</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Section Item 2.1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Section Item 2.2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Section Item 2.3</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>APIs</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Section Item 3.1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Section Item 3.2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Section Item 3.3</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Integrations</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Section Item 4.1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Section Item 4.2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Section Item 4.3</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Utilities</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Section Item 5.1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Item 5.3</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Web</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Section Item 6.2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Section Item 6.3</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-tablet-alt"></i></span>Mobile</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Section Item 7.1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Section Item 7.2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Section Item 7.3</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Resources</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Section Item 8.1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li>
-			    </ul>
+        </div>
+    </header>
 
-		    </nav><!--//docs-nav-->
-	    </div><!--//docs-sidebar-->
-	    <div class="docs-content">
-		    <div class="container">
-			    <article class="docs-article" id="section-1">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 3 days ago</span></h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-						</section><!--//docs-intro-->
-						
-						<h5>Github Code Example:</h5>
-						<p>You can <a class="theme-link" href="https://gist.github.com/"  target="_blank">embed your code snippets using Github gists</a></p>
-						<div class="docs-code-block">
-							<!-- ** Embed github code starts ** -->
-							<script src="https://gist.github.com/xriley/fce6cf71edfd2dadc7919eb9c98f3f17.js"></script>
-							<!-- ** Embed github code ends ** -->
-						</div><!--//docs-code-block-->
-						
-					     <h5>Highlight.js Example:</h5>
-						<p>You can <a class="theme-link" href="https://github.com/highlightjs/highlight.js" target="_blank">embed your code snippets using highlight.js</a> It supports <a class="theme-link" href="https://highlightjs.org/static/demo/" target="_blank">185 languages and 89 styles</a>.</p>
-						<p>This template uses <a class="theme-link" href="https://highlightjs.org/static/demo/" target="_blank">Atom One Dark</a> style for the code blocks: <br><code>&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css&#x22;&#x3E;</code></p>
-						<div class="docs-code-block">
-							<pre class="shadow-lg rounded"><code class="json hljs">[
-  {
-    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"apples"</span>,
-    <span class="hljs-attr">"count"</span>: [<span class="hljs-number">12000</span>, <span class="hljs-number">20000</span>],
-    <span class="hljs-attr">"description"</span>: {<span class="hljs-attr">"text"</span>: <span class="hljs-string">"..."</span>, <span class="hljs-attr">"sensitive"</span>: <span class="hljs-literal">false</span>}
-  },
-  {
-    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"oranges"</span>,
-    <span class="hljs-attr">"count"</span>: [<span class="hljs-number">17500</span>, <span class="hljs-literal">null</span>],
-    <span class="hljs-attr">"description"</span>: {<span class="hljs-attr">"text"</span>: <span class="hljs-string">"..."</span>, <span class="hljs-attr">"sensitive"</span>: <span class="hljs-literal">false</span>}
-  }
-]
+    <div class="docs-wrapper">
+        <div id="docs-sidebar" class="docs-sidebar">
+            <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+                    <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+                    <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <nav id="docs-nav" class="docs-nav navbar">
+                <ul class="section-items list-unstyled nav flex-column pb-3">
+                    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introduction</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">What is NORT?</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Architecture Overview</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">The Two Command Paths</a></li>
 
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Installation</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Prerequisites</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Environment Variables</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Running Locally</a></li>
 
-</code></pre>
-						</div><!--//docs-code-block-->
-						
-						
-				    </header>
-				    <section class="docs-section" id="item-1-1">
-						<h2 class="section-heading">Section Item 1.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. </p>
-						<p>Code Example: <code>npm install &lt;package&gt;</code></p>
-						<h5>Unordered List Examples:</h5>
-						<ul>
-						    <li><strong class="me-1">HTML5:</strong> <code>&lt;div id="foo"&gt;</code></li>
-						    <li><strong class="me-1">CSS:</strong> <code>#foo { color: red }</code></li>
-						    <li><strong class="me-1">JavaScript:</strong> <code>console.log(&#x27;#foo\bar&#x27;);</code></li>
-						</ul>
-						<h5>Ordered List Examples:</h5>
-						<ol>
-							<li>Download lorem ipsum dolor sit amet.</li>
-							<li>Click ipsum faucibus venenatis.</li>
-							<li>Configure fermentum malesuada nunc.</li>
-							<li>Deploy donec non ante libero.</li>
-						</ol>
-                        <h5>Callout Examples:</h5>
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>API Reference</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Markets</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Signals</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Advice / Agent</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">Paper Trading</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5">Wallet & Leaderboard</a></li>
+
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-brain"></i></span>Signals Engine</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Liquidity Filter</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Scoring Pipeline</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Reason Strings</a></li>
+
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-robot"></i></span>OpenClaw Agent</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">OpenRouter Integration</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Prompt Templates</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">x402 Payment Gate</a></li>
+
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-database"></i></span>Data Models</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Core Tables</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Paper Trading Tables</a></li>
+
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Pages & Routes</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Design System</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Auth & Telegram</a></li>
+
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder me-2"><i class="fas fa-paper-plane"></i></span>Telegram Bot</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Command Reference</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Bot Architecture</a></li>
+
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">General</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Paper Trading</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">AI & Payments</a></li>
+                </ul>
+            </nav>
+        </div><!--//docs-sidebar-->
+
+        <div class="docs-content">
+            <div class="container">
+
+                <!-- ═══════════════════════════════════
+                     SECTION 1 — INTRODUCTION
+                ═══════════════════════════════════ -->
+                <article class="docs-article" id="section-1">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">Introduction <span class="docs-time">NORT v1.0</span></h1>
+                        <section class="docs-intro">
+                            <p>NORT is a Polymarket AI assistant that automates prediction market analysis. It watches hundreds of active markets, surfaces the most interesting ones using a quantitative signals engine, and provides AI-generated trading advice through an agentic layer called OpenClaw. Everything runs in paper trading mode — no real funds, no real risk.</p>
+                        </section>
+                    </header>
+
+                    <section class="docs-section" id="item-1-1">
+                        <h2 class="section-heading">What is NORT?</h2>
+                        <p>Polymarket is a prediction market platform where people bet on real-world outcomes using real money. At any given moment there are hundreds of active markets — and browsing them manually to find an opportunity is impractical. NORT automates that entire process.</p>
+                        <p>It fetches all active Polymarket markets, scores and ranks them by momentum and volume, exposes structured AI advice via OpenClaw, gates premium advice behind x402 micro-payments, and presents everything through a Next.js dashboard and a Telegram bot.</p>
+
+                        <h5>What NORT does in v1:</h5>
+                        <ul>
+                            <li>Fetches and caches all active Polymarket markets (auto-synced every 15 minutes)</li>
+                            <li>Scores and ranks markets by momentum + volume spike via the Signals Engine</li>
+                            <li>Provides free AI market analysis via the OpenClaw agent (OpenRouter)</li>
+                            <li>Gates premium advice behind x402 micro-payment verification</li>
+                            <li>Supports paper trades, wallet balances, P&amp;L tracking, and a leaderboard</li>
+                            <li>Exposes everything through a FastAPI backend, a Next.js dashboard, and a Telegram bot</li>
+                        </ul>
+
                         <div class="callout-block callout-block-info">
-                            
                             <div class="content">
-                                <h4 class="callout-title">
-	                                <span class="callout-icon-holder me-1">
-		                                <i class="fas fa-info-circle"></i>
-		                            </span><!--//icon-holder-->
-	                                Note
-	                            </h4>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <code>&lt;code&gt;</code> , Nemo enim ipsam voluptatem quia voluptas <a href="#">link example</a> sit aspernatur aut odit aut fugit.</p>
-                            </div><!--//content-->
-                        </div><!--//callout-block-->
-                        
+                                <h4 class="callout-title"><span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>Paper Trading Only</h4>
+                                <p>NORT v1 runs exclusively in paper trading mode. <code>EXECUTION_MODE=PAPER</code> is always on. No real funds are moved. The <code>COMMIT_TX</code> mode only writes receipts to Polygon testnet as an optional demo feature.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-1-2">
+                        <h2 class="section-heading">Architecture Overview</h2>
+                        <p>NORT is built in three distinct layers. User interfaces never talk to the database or the AI directly — all data flows through the FastAPI backend, which is the single source of truth.</p>
+
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="hljs">┌─────────────────────────────────────────────┐
+│              USER INTERFACES                │
+│   Telegram Bot          Next.js Dashboard   │
+└──────────────┬───────────────────┬──────────┘
+               │                   │
+               ▼                   ▼
+┌─────────────────────────────────────────────┐
+│              FASTAPI BACKEND                │
+│  Markets API  │  Signals API  │  Trades API │
+│  x402 Verify  │  Agent Route  │  Wallet API │
+└──────────────┬───────────────────┬──────────┘
+               │                   │
+               ▼                   ▼
+┌─────────────────────────────────────────────┐
+│            DATA & INTELLIGENCE              │
+│   SQLite Database      OpenClaw + OpenRouter│
+│   (assistant.db)       (AI advice only)     │
+└─────────────────────────────────────────────┘</code></pre>
+                        </div>
+
+                        <h5>File structure:</h5>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="hljs">NORT/
+├── apps/
+│   ├── telegram-bot/
+│   │   ├── main.py           ← bot startup, registers handlers
+│   │   └── commands.py       ← all command logic
+│   └── dashboard/
+│       └── app/
+│           ├── page.jsx      ← Feed (home)
+│           ├── signals/      ← Signals page
+│           ├── leaderboard/  ← Leaderboard
+│           ├── achievements/ ← Badges
+│           ├── trade/        ← Bets / paper trades
+│           ├── profile/      ← Profile page
+│           ├── components/   ← Shared UI components
+│           └── lib/api.js    ← All backend API calls
+├── services/
+│   ├── backend/
+│   │   ├── main.py           ← FastAPI app, router registration
+│   │   ├── api/              ← Route handlers
+│   │   ├── core/             ← Signals engine, paper trading logic
+│   │   └── data/             ← SQLModel models, database init
+│   └── agent/
+│       ├── agent.json        ← OpenRouter config
+│       └── prompt_templates.py
+└── data/
+    └── assistant.db          ← SQLite database</code></pre>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-1-3">
+                        <h2 class="section-heading">The Two Command Paths</h2>
+                        <p>Every request in NORT takes one of two paths. This is the most important architectural decision — it determines cost, latency, and whether the AI is involved at all.</p>
+
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light">Fast Path</th>
+                                        <td>Telegram → FastAPI → SQLite → Response. Used for <code>/trending</code>, <code>/signals</code>, <code>/market</code>, <code>/portfolio</code>, <code>/papertrade</code>. Fast, cheap, no AI.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light">Agent Path</th>
+                                        <td>Telegram → (x402 check) → FastAPI → OpenClaw → OpenRouter → LLM → Response. Used only for <code>/advice</code> and <code>/premium_advice</code>. Slower, costs tokens, produces structured JSON analysis.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         <div class="callout-block callout-block-warning">
                             <div class="content">
-                                <h4 class="callout-title">
-	                                <span class="callout-icon-holder me-1">
-		                                <i class="fas fa-bullhorn"></i>
-		                            </span><!--//icon-holder-->
-	                                Warning
-	                            </h4>
-                                <p>Nunc hendrerit odio quis dignissim efficitur. Proin ut finibus libero. Morbi posuere fringilla felis eget sagittis. Fusce sem orci, cursus in tortor <a href="#">link example</a> tellus vel diam viverra elementum.</p>
-                            </div><!--//content-->
-                        </div><!--//callout-block-->
-                        
+                                <h4 class="callout-title"><span class="callout-icon-holder me-1"><i class="fas fa-bullhorn"></i></span>The Rule Is Absolute</h4>
+                                <p>OpenClaw runs <strong>only</strong> for <code>/advice</code> and <code>/premium_advice</code>. It never runs for <code>/trending</code>, <code>/signals</code>, <code>/market</code>, <code>/portfolio</code>, or <code>/papertrade</code>. Breaking this rule adds cost and latency where it doesn't belong.</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- ═══════════════════════════════════
+                     SECTION 2 — INSTALLATION
+                ═══════════════════════════════════ -->
+                <article class="docs-article" id="section-2">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">Installation</h1>
+                        <section class="docs-intro">
+                            <p>NORT runs fully locally via Docker Compose. One command starts the backend, populates the database, and makes all APIs available on <code>localhost:8000</code>. The dashboard is a separate Next.js app that runs on <code>localhost:3000</code>.</p>
+                        </section>
+                    </header>
+
+                    <section class="docs-section" id="item-2-1">
+                        <h2 class="section-heading">Prerequisites</h2>
+                        <ul>
+                            <li><strong>Docker + Docker Compose</strong> — for the backend and database</li>
+                            <li><strong>Node.js 18+</strong> — for the Next.js dashboard</li>
+                            <li><strong>Python 3.11+</strong> — if running the backend outside Docker</li>
+                            <li><strong>OpenRouter API key</strong> — for the AI advice layer (<code>OPENCLAW_TOKEN</code>)</li>
+                            <li><strong>Privy App ID</strong> — for wallet auth in the dashboard</li>
+                        </ul>
+                    </section>
+
+                    <section class="docs-section" id="item-2-2">
+                        <h2 class="section-heading">Environment Variables</h2>
+                        <p>Create a <code>.env</code> file in the project root. The backend reads these at startup.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="hljs bash"># Backend
+OPENCLAW_TOKEN=sk-or-...         # OpenRouter API key
+EXECUTION_MODE=PAPER             # Always PAPER in v1
+POLYMARKET_API_URL=https://gamma-api.polymarket.com
+
+# Dashboard (apps/dashboard/.env.local)
+NEXT_PUBLIC_API_URL=http://localhost:8000
+NEXT_PUBLIC_PRIVY_APP_ID=clx...  # Privy app ID for wallet auth</code></pre>
+                        </div>
+
+                        <div class="callout-block callout-block-danger">
+                            <div class="content">
+                                <h4 class="callout-title"><span class="callout-icon-holder me-1"><i class="fas fa-exclamation-triangle"></i></span>Never commit secrets</h4>
+                                <p>The <code>.env</code> file is already in <code>.gitignore</code>. Never commit your <code>OPENCLAW_TOKEN</code> or <code>PRIVY_APP_ID</code> to the repository.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-2-3">
+                        <h2 class="section-heading">Running Locally</h2>
+                        <h5>1. Start the backend</h5>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="hljs bash">docker-compose up --build</code></pre>
+                        </div>
+                        <p>This starts the FastAPI backend on port 8000, initialises the SQLite database, and syncs markets from Polymarket. The background sync loop will re-sync every 15 minutes automatically.</p>
+
+                        <h5>2. Start the dashboard</h5>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="hljs bash">cd apps/dashboard
+npm install
+npm run dev</code></pre>
+                        </div>
+                        <p>The dashboard is available at <code>http://localhost:3000</code>. It polls the FastAPI backend at <code>NEXT_PUBLIC_API_URL</code>.</p>
+
+                        <h5>3. Start the Telegram bot (optional)</h5>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="hljs bash">cd apps/telegram-bot
+pip install -r requirements.txt
+python main.py</code></pre>
+                        </div>
+
                         <div class="callout-block callout-block-success">
                             <div class="content">
-                                <h4 class="callout-title">
-	                                <span class="callout-icon-holder me-1">
-		                                <i class="fas fa-thumbs-up"></i>
-		                            </span><!--//icon-holder-->
-	                                Tip
-	                            </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="#">Link example</a> aenean commodo ligula eget dolor.</p>
-                            </div><!--//content-->
-                        </div><!--//callout-block-->
-                        
-                        <div class="callout-block callout-block-danger me-1">
-                            <div class="content">
-                                <h4 class="callout-title">
-	                                <span class="callout-icon-holder">
-		                                <i class="fas fa-exclamation-triangle"></i>
-		                            </span><!--//icon-holder-->
-	                                Danger
-	                            </h4>
-                                <p>Morbi eget interdum sapien. Donec sed turpis sed nulla lacinia accumsan vitae ut tellus. Aenean vestibulum <a href="#">Link example</a> maximus ipsum vel dignissim. Morbi ornare elit sit amet massa feugiat, viverra dictum ipsum pellentesque. </p>
-                            </div><!--//content-->
-                        </div><!--//callout-block-->
-                        
-                        <h5 class="mt-5">Alert Examples:</h5>
-                        <div class="alert alert-primary" role="alert">
-						  This is a primary alert—check it out!
-						</div>
-						<div class="alert alert-secondary" role="alert">
-						  This is a secondary alert—check it out!
-						</div>
-						<div class="alert alert-success" role="alert">
-						  This is a success alert—check it out!
-						</div>
-						<div class="alert alert-danger" role="alert">
-						  This is a danger alert—check it out!
-						</div>
-						<div class="alert alert-warning" role="alert">
-						  This is a warning alert—check it out!
-						</div>
-						<div class="alert alert-info" role="alert">
-						  This is a info alert—check it out!
-						</div>
-						<div class="alert alert-light" role="alert">
-						  This is a light alert—check it out!
-						</div>
-						<div class="alert alert-dark" role="alert">
-						  This is a dark alert—check it out!
-						</div>
-                        
-                       
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-1-2">
-						<h2 class="section-heading">Section Item 1.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-						<h5 class="mt-5">Lightbox Example:</h5>
-						
-						<p>The example below uses the <i class="fas fa-external-link-alt"></i> <a class="theme-link" href="https://github.com/andreknieriem/simplelightbox" target="_blank">simplelightbox plugin</a>. </p>
-						
-						<div class="simplelightbox-gallery row mb-3">
-							<div class="col-12 col-md-4 mb-3">
-						        <a href="assets/images/coderpro-home.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/coderpro-home-thumb.png" alt="" title="CoderPro Home Page"/></a>
-							</div>
-							<div class="col-12 col-md-4 mb-3">
-						        <a href="assets/images/coderpro-features.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/coderpro-features-thumb.png" alt="" title="CoderPro Features Page"/></a>
-							</div><!--//col-->
-							<div class="col-12 col-md-4 mb-3">
-						        <a href="assets/images/coderpro-pricing.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/coderpro-pricing-thumb.png" alt="" title="CoderPro Pricing Page"/></a>
-							</div><!--//col-->
-							
-						</div><!--//gallery-->
-						
-						<h5>Custom Table:</h5>
-						<div class="table-responsive my-4">
-							<table class="table table-bordered">
-								<tbody>
-								    <tr>
-									    <th class="theme-bg-light"><a class="theme-link" href="#">Option 1</a></th>
-									    <td>Option 1 desc lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
-									</tr>
-									<tr>
-									      <th class="theme-bg-light"><a class="theme-link" href="#">Option 2</a></th>
-									      <td>Option 2 desc lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
-									</tr>
-									
-									<tr>
-									    <th class="theme-bg-light"><a class="theme-link" href="#">Option 3</a></th>
-									    <td>Option 3 desc lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
-									</tr>
-									
-									<tr>
-									    <th class="theme-bg-light"><a class="theme-link" href="#">Option 4</a></th>
-									    <td>Option 4 desc lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
-									</tr>
-								</tbody>
-							</table>
-						</div><!--//table-responsive-->
-						<h5>Stripped Table:</h5>
-						<div class="table-responsive my-4">
-							<table class="table table-striped">
-								<thead>
-									<tr>
-										<th scope="col">#</th>
-										<th scope="col">First</th>
-										<th scope="col">Last</th>
-										<th scope="col">Handle</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
-									</tr>
-									<tr>
-										<th scope="row">2</th>
-										<td>Jacob</td>
-										<td>Thornton</td>
-										<td>@fat</td>
-									</tr>
-									<tr>
-										<th scope="row">3</th>
-										<td>Larry</td>
-										<td>the Bird</td>
-										<td>@twitter</td>
-									</tr>
-								</tbody>
-							</table>
-						</div><!--//table-responsive-->
-						<h5>Bordered Dark Table:</h5>
-						<div class="table-responsive my-4">
-							<table class="table table-bordered table-dark">
-								<thead>
-									<tr>
-										<th scope="col">#</th>
-										<th scope="col">First</th>
-										<th scope="col">Last</th>
-										<th scope="col">Handle</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
-									</tr>
-									<tr>
-										<th scope="row">2</th>
-										<td>Jacob</td>
-										<td>Thornton</td>
-										<td>@fat</td>
-									</tr>
-									<tr>
-										<th scope="row">3</th>
-										<td>Larry</td>
-										<td>the Bird</td>
-										<td>@twitter</td>
-									</tr>
-								</tbody>
-							</table>
-						</div><!--//table-responsive-->
-						
-						
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-1-3">
-						<h2 class="section-heading">Section Item 1.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-						<h5>Badges Examples:</h5>
-						<div class="my-4">
-						    <span class="badge badge-primary">Primary</span>
-							<span class="badge badge-secondary">Secondary</span>
-							<span class="badge badge-success">Success</span>
-							<span class="badge badge-danger">Danger</span>
-							<span class="badge badge-warning">Warning</span>
-							<span class="badge badge-info">Info</span>
-							<span class="badge badge-light">Light</span>
-							<span class="badge badge-dark">Dark</span>
-						</div>
-						<h5>Button Examples:</h5>
-						<div class="row my-3">
-                        <div class="col-md-6 col-12">
-                                <ul class="list list-unstyled pl-0">
-                                    <li><a href="#" class="btn btn-primary">Primary Button</a></li>
-                                    <li><a href="#" class="btn btn-secondary">Secondary Button</a></li>
-                                    <li><a href="#" class="btn btn-light">Light Button</a></li>
-                                    <li><a href="#" class="btn btn-success">Succcess Button</a></li>
-                                    <li><a href="#" class="btn btn-info">Info Button</a></li>
-                                    <li><a href="#" class="btn btn-warning">Warning Button</a></li>
-                                    <li><a href="#" class="btn btn-danger">Danger Button</a></li>
-                                </ul>
+                                <h4 class="callout-title"><span class="callout-icon-holder me-1"><i class="fas fa-thumbs-up"></i></span>Verify it's running</h4>
+                                <p>Open <code>http://localhost:8000</code> — you should see <code>&#123;"status":"online","message":"NORT Backend is active."&#125;</code>. The backend auto-docs are at <code>http://localhost:8000/docs</code>.</p>
                             </div>
-                            <div class="col-md-6 col-12">
-                                <ul class="list list-unstyled pl-0">
-                                    <li><a href="#" class="btn btn-primary"><i class="fas fa-download me-2"></i> Download Now</a></li>
-                                    <li><a href="#" class="btn btn-secondary"><i class="fas fa-book me-2"></i> View Docs</a></li>
-                                    <li><a href="#" class="btn btn-light"><i class="fas fa-arrow-alt-circle-right me-2"></i> View Features</a></li>
-                                    <li><a href="#" class="btn btn-success"><i class="fas fa-code-branch me-2"></i> Fork Now</a></li>
-                                    <li><a href="#" class="btn btn-info"><i class="fas fa-play-circle me-2"></i> Find Out Now</a></li>
-                                    <li><a href="#" class="btn btn-warning"><i class="fas fa-bug me-2"></i> Report Bugs</a></li>
-                                    <li><a href="#" class="btn btn-danger"><i class="fas fa-exclamation-circle me-2"></i> Submit Issues</a></li>
-                                </ul>
-                            </div>
-                        </div><!--//row-->
-                        
-                        <h5>Progress Examples:</h5>
-                        <div class="my-4">
-	                        <div class="progress my-4">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress my-4">
-							    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress my-4">
-							    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress my-4">
-							    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
                         </div>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-1-4">
-						<h2 class="section-heading">Section Item 1.4</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-						
-						
-						<h5>Pagination Example:</h5>
-						<nav aria-label="Page navigation example">
-						    <ul class="pagination pl-0">
-							    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-							    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-							    <li class="page-item"><a class="page-link" href="#">2</a></li>
-							    <li class="page-item"><a class="page-link" href="#">3</a></li>
-							    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-						    </ul>
-						</nav>
-						
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-						
-					</section><!--//section-->
-					<section class="docs-section" id="item-1-5">
-						<h2 class="section-heading">Section Item 1.5</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					<section class="docs-section" id="item-1-6">
-						<h2 class="section-heading">Section Item 1.6</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-			    </article>
-			    
-			    <article class="docs-article" id="section-2">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Installation</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-2-1">
-						<h2 class="section-heading">Section Item 2.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-2-2">
-						<h2 class="section-heading">Section Item 2.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-2-3">
-						<h2 class="section-heading">Section Item 2.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			    
-			    <article class="docs-article" id="section-3">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">APIs</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-3-1">
-						<h2 class="section-heading">Section Item 3.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-3-2">
-						<h2 class="section-heading">Section Item 3.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-3-3">
-						<h2 class="section-heading">Section Item 3.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			    <article class="docs-article" id="section-4">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Intergrations</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-4-1">
-						<h2 class="section-heading">Section Item 4.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-4-2">
-						<h2 class="section-heading">Section Item 4.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-4-3">
-						<h2 class="section-heading">Section Item 4.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			    <article class="docs-article" id="section-5">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Utilities</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-5-1">
-						<h2 class="section-heading">Section Item 5.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-5-2">
-						<h2 class="section-heading">Section Item 5.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-5-3">
-							<h2 class="section-heading">Section Item 5.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			    
-		        <article class="docs-article" id="section-6">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Web</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-6-1">
-						<h2 class="section-heading">Section Item 6.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-6-2">
-						<h2 class="section-heading">Section Item 6.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-6-3">
-							<h2 class="section-heading">Section Item 6.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			    
-			    <article class="docs-article" id="section-7">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Mobile</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-7-1">
-						<h2 class="section-heading">Section Item 7.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-7-2">
-						<h2 class="section-heading">Section Item 7.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-7-3">
-							<h2 class="section-heading">Section Item 7.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			    
-			    <article class="docs-article" id="section-8">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Resources</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-8-1">
-						<h2 class="section-heading">Section Item 8.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-8-2">
-						<h2 class="section-heading">Section Item 8.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-8-3">
-							<h2 class="section-heading">Section Item 8.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			    
-			    <article class="docs-article" id="section-9">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">FAQs</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. You can list all your FAQs using the format below.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-9-1">
-						<h2 class="section-heading">Section Item 9.1 <small>(FAQ Category One)</small></h2>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?</h5>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
-						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I  bibendum sodales?</h5>
-						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
-						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-9-2">
-						<h2 class="section-heading">Section Item 9.2 <small>(FAQ Category Two)</small></h2>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?</h5>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
-						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I  bibendum sodales?</h5>
-						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
-						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-9-3">
-							<h2 class="section-heading">Section Item 9.3 <small>(FAQ Category Three)</small></h2>
-						    <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to dapibus sollicitudin justo vel fermentum?</h5>
-							<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-							<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How long bibendum sodales?</h5>
-							<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-							<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where dapibus sollicitudin?</h5>
-							<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
+                    </section>
+                </article>
 
-			    <footer class="footer">
-				    <div class="container text-center py-5">
-				        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-			            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-				        <ul class="social-list list-unstyled pt-4 mb-0">
-						    <li class="list-inline-item"><a href="#"><i class="fa-brands fa-github fa-fw"></i></a></li> 
-				            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-slack fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook-f fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-instagram fa-fw"></i></a></li>
-				        </ul><!--//social-list-->
-				    </div>
-			    </footer>
-		    </div> 
-	    </div>
+                <!-- ═══════════════════════════════════
+                     SECTION 3 — API REFERENCE
+                ═══════════════════════════════════ -->
+                <article class="docs-article" id="section-3">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">API Reference</h1>
+                        <section class="docs-intro">
+                            <p>All endpoints are served by the FastAPI backend on port 8000. Every route is registered both with and without an <code>/api</code> prefix for compatibility. Interactive docs are available at <code>/docs</code>.</p>
+                        </section>
+                    </header>
+
+                    <section class="docs-section" id="item-3-1">
+                        <h2 class="section-heading">Markets</h2>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>GET /markets/</code></th>
+                                        <td>Returns all active markets. Query param: <code>limit</code> (default 100). Response includes <code>markets[]</code> array with id, question, category, current_odds, volume.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>GET /markets/{id}</code></th>
+                                        <td>Returns a single market by ID. Returns 404 if the market is not found or inactive.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>GET /markets/refresh</code></th>
+                                        <td>Triggers a manual sync from the Polymarket API. Returns count of markets synced. Called automatically on startup and every 15 minutes.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-3-2">
+                        <h2 class="section-heading">Signals</h2>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>GET /signals/</code></th>
+                                        <td>Returns ranked market signals. Query param: <code>top</code> (default 20). Each signal includes <code>market_id</code>, <code>score</code> (0.0–1.0), <code>reason</code> (plain English), <code>current_odds</code>, <code>volume</code>.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h5>Sample response:</h5>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="json hljs">[
+  {
+    <span class="hljs-attr">"market_id"</span>: <span class="hljs-string">"market-001"</span>,
+    <span class="hljs-attr">"question"</span>: <span class="hljs-string">"Will BTC hit $100k by March?"</span>,
+    <span class="hljs-attr">"score"</span>: <span class="hljs-number">0.7200</span>,
+    <span class="hljs-attr">"reason"</span>: <span class="hljs-string">"Price moved +44.0% with 16.0x average volume."</span>,
+    <span class="hljs-attr">"current_odds"</span>: <span class="hljs-number">0.72</span>,
+    <span class="hljs-attr">"volume"</span>: <span class="hljs-number">89000</span>,
+    <span class="hljs-attr">"category"</span>: <span class="hljs-string">"Crypto"</span>
+  }
+]</code></pre>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-3-3">
+                        <h2 class="section-heading">Advice / Agent</h2>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>POST /agent/advice</code></th>
+                                        <td>Triggers OpenClaw for a specific market. Body: <code>&#123;"market_id": "...", "telegram_id": "...", "premium": false&#125;</code>. Returns structured JSON analysis. Returns <code>402</code> if <code>premium: true</code> and payment not verified.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>POST /agent/x402/verify</code></th>
+                                        <td>Verifies an x402 payment proof. Body: <code>&#123;"proof": "64-char-hex", "user_id": "..."&#125;</code>. Caches the verification for 24 hours.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h5>Advice response schema:</h5>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="json hljs">{
+  <span class="hljs-attr">"market_id"</span>: <span class="hljs-string">"market-001"</span>,
+  <span class="hljs-attr">"summary"</span>: <span class="hljs-string">"..."</span>,
+  <span class="hljs-attr">"why_trending"</span>: <span class="hljs-string">"..."</span>,
+  <span class="hljs-attr">"risk_factors"</span>: [<span class="hljs-string">"..."</span>, <span class="hljs-string">"..."</span>],
+  <span class="hljs-attr">"suggested_plan"</span>: <span class="hljs-string">"BUY YES"</span>,
+  <span class="hljs-attr">"confidence"</span>: <span class="hljs-number">0.74</span>,
+  <span class="hljs-attr">"disclaimer"</span>: <span class="hljs-string">"This is not financial advice. Paper trading only."</span>,
+  <span class="hljs-attr">"tool_calls_used"</span>: [<span class="hljs-string">"openclaw_agent"</span>, <span class="hljs-string">"duckduckgo_search"</span>]
+}</code></pre>
+                        </div>
+                        <p><code>suggested_plan</code> is always one of: <code>BUY YES</code>, <code>BUY NO</code>, or <code>WAIT</code>. The backend enforces this — invalid LLM responses default to <code>WAIT</code>.</p>
+                    </section>
+
+                    <section class="docs-section" id="item-3-4">
+                        <h2 class="section-heading">Paper Trading</h2>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>POST /api/papertrade</code></th>
+                                        <td>Logs a new paper trade. Body: <code>&#123;"telegram_user_id", "market_id", "market_question", "outcome": "YES"|"NO", "shares", "price_per_share", "direction": "BUY"&#125;</code>.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>POST /api/trade/commit</code></th>
+                                        <td>Optionally commits a trade receipt to Polygon testnet. Returns <code>tx_hash</code>. Only available if <code>EXECUTION_MODE=COMMIT_TX</code>.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-3-5">
+                        <h2 class="section-heading">Wallet &amp; Leaderboard</h2>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>GET /api/wallet/summary</code></th>
+                                        <td>Returns the user's paper wallet. Query param: <code>wallet_address</code>. Returns <code>paper_balance</code>, <code>net_pnl</code>, <code>total_trades</code>, and a <code>trades[]</code> array.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>GET /api/leaderboard</code></th>
+                                        <td>Returns the ranked leaderboard. Query param: <code>limit</code> (default 50). Each entry includes rank, display_name, portfolio_value, net_pnl, win_rate, streak, xp, badge.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>GET /api/leaderboard/me</code></th>
+                                        <td>Returns the current user's rank entry. Query param: <code>wallet_address</code>. Returns null if user has no trades.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>GET /api/user/stats</code></th>
+                                        <td>Returns XP, level, streak, rank, and <code>xpToNextLevel</code> for a user. Used on the Profile and Achievements pages.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>GET /api/user/achievements</code></th>
+                                        <td>Returns all achievements with <code>earned</code> boolean and XP values. Achievements are computed from trade history.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- ═══════════════════════════════════
+                     SECTION 4 — SIGNALS ENGINE
+                ═══════════════════════════════════ -->
+                <article class="docs-article" id="section-4">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">Signals Engine</h1>
+                        <section class="docs-intro">
+                            <p>The signals engine is the intelligence layer between raw market data and useful rankings. It lives in <code>services/backend/core/signals_engine.py</code> and is called by the <code>GET /signals</code> endpoint. Without it, the system can only answer "here are all the markets." With it, the system answers "here are the markets you should actually pay attention to right now, and here's why."</p>
+                        </section>
+                    </header>
+
+                    <section class="docs-section" id="item-4-1">
+                        <h2 class="section-heading">Liquidity Filter</h2>
+                        <p>The first step is a hard gate. Any market with a volume below <code>MIN_LIQUIDITY = 1000.0</code> is dropped before scoring. This prevents a market with two trades and $10 volume from scoring #1 due to a 100% price move — that's noise, not a signal.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="hljs python">MIN_LIQUIDITY = 1000.0
+
+def passes_liquidity_filter(market: Dict) -> bool:
+    volume = market.get("volume", 0)
+    return volume >= MIN_LIQUIDITY</code></pre>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-4-2">
+                        <h2 class="section-heading">Scoring Pipeline</h2>
+                        <p>Each market that passes the liquidity filter is scored on two dimensions, then combined into a composite score.</p>
+
+                        <h5>Momentum Score (0.0 → 1.0)</h5>
+                        <p>Measures how much the market price has moved since the last snapshot. A large move signals that new information entered the market and informed traders are reacting.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="hljs python">def momentum_score(market: Dict) -> float:
+    current  = market.get("current_odds", 0.5)
+    previous = market.get("previous_odds", current)
+    if previous == 0:
+        return 0.0
+    raw_change = abs(current - previous) / previous
+    return min(raw_change, 1.0)  # capped at 1.0</code></pre>
+                        </div>
+
+                        <h5>Volume Spike Score (0.0 → 1.0)</h5>
+                        <p>Measures how unusual current volume is compared to the market's baseline average. A market with 3× its average volume confirms that many participants are reacting — not just one whale.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="hljs python">def volume_spike_score(market: Dict) -> float:
+    current_volume = market.get("volume", 0)
+    avg_volume     = market.get("avg_volume", 500)
+    if avg_volume == 0:
+        return 0.0
+    ratio = current_volume / avg_volume
+    return min(ratio / 5.0, 1.0)  # 5x avg = score 1.0</code></pre>
+                        </div>
+
+                        <h5>Composite Score</h5>
+                        <p>Both scores are weighted equally and combined. A market needs to show real activity across two dimensions to rank high, which reduces false positives.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="hljs python">MOMENTUM_WEIGHT = 0.5
+VOLUME_WEIGHT   = 0.5
+
+def composite_score(market: Dict) -> float:
+    m = momentum_score(market)
+    v = volume_spike_score(market)
+    return round((MOMENTUM_WEIGHT * m) + (VOLUME_WEIGHT * v), 4)</code></pre>
+                        </div>
+
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light">Score ≥ 0.80</th>
+                                        <td><span class="nort-version" style="background:rgba(45,212,191,0.2);color:var(--teal);">◆ HOT</span> — Strong momentum + unusual volume. High priority signal.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light">Score 0.50–0.79</th>
+                                        <td><span class="nort-version" style="background:rgba(96,165,250,0.15);color:var(--blue);border-color:rgba(96,165,250,0.3);">◆ WARM</span> — Notable activity. Worth watching.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light">Score &lt; 0.50</th>
+                                        <td><span class="nort-version" style="background:var(--glass-bg);color:var(--text-muted);border-color:var(--glass-border);">◆ COOL</span> — Low activity. Listed but deprioritised.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-4-3">
+                        <h2 class="section-heading">Reason Strings</h2>
+                        <p>Every ranked market must have a plain-English explanation of why it ranked. A score of 0.72 is meaningless to a human — "Price moved +44% with 16× average volume" is immediately understandable. This is what makes NORT feel intelligent rather than just mathematical.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="hljs python">def build_reason(market: Dict) -> str:
+    current  = market.get("current_odds", 0.5)
+    previous = market.get("previous_odds", current)
+    volume   = market.get("volume", 0)
+    avg_vol  = market.get("avg_volume", 500)
+
+    if previous > 0:
+        pct = ((current - previous) / previous) * 100
+        price_str = f"Price moved {pct:+.1f}%"
+    else:
+        price_str = "Price data unavailable"
+
+    if avg_vol > 0:
+        ratio = volume / avg_vol
+        vol_str = f"{ratio:.1f}x average volume"
+    else:
+        vol_str = "volume data unavailable"
+
+    return f"{price_str} with {vol_str}."</code></pre>
+                        </div>
+                        <div class="callout-block callout-block-info">
+                            <div class="content">
+                                <h4 class="callout-title"><span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>Non-negotiable</h4>
+                                <p>Every signal must have a reason string. A score without an explanation is not acceptable — it's a hard rule in NORT's design principles.</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- ═══════════════════════════════════
+                     SECTION 5 — OPENCLAW AGENT
+                ═══════════════════════════════════ -->
+                <article class="docs-article" id="section-5">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">OpenClaw Agent</h1>
+                        <section class="docs-intro">
+                            <p>OpenClaw is the AI advice layer. It's a structured reasoning agent — not a chatbot — that always produces the same output format regardless of which market it analyzes. It lives in <code>services/agent/</code> and is called by the <code>POST /agent/advice</code> endpoint.</p>
+                        </section>
+                    </header>
+
+                    <section class="docs-section" id="item-5-1">
+                        <h2 class="section-heading">OpenRouter Integration</h2>
+                        <p>OpenClaw doesn't call OpenAI or Anthropic directly. It routes through OpenRouter, which acts as a unified gateway to any supported model. To swap models, change one line in <code>agent.json</code> — no code changes needed.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="json hljs">{
+  "model": "anthropic/claude-3-haiku",
+  "api_url": "https://openrouter.ai/api/v1/chat/completions"
+}</code></pre>
+                        </div>
+                        <p>Before calling the LLM, OpenClaw enriches the prompt with three data sources: the full market object (<code>get_market(id)</code>), the current signal snapshot (<code>get_signals()</code>), and recent DuckDuckGo news search results for the market's question.</p>
+                    </section>
+
+                    <section class="docs-section" id="item-5-2">
+                        <h2 class="section-heading">Prompt Templates</h2>
+                        <p>The system prompt and user prompt are built in <code>services/agent/prompt_templates.py</code>. The system prompt enforces the output format — OpenClaw must always return valid JSON with exactly these keys:</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="json hljs">{
+  "summary":        "Plain English summary of the market situation",
+  "why_trending":   "Explanation of the momentum and volume signals",
+  "risk_factors":   ["Risk 1", "Risk 2", "Risk 3"],
+  "suggested_plan": "BUY YES | BUY NO | WAIT",
+  "confidence":     0.74
+}</code></pre>
+                        </div>
+                        <p>The backend parse layer (<code>parse_response()</code>) strips markdown fences, validates JSON, and enforces that <code>suggested_plan</code> is one of the three valid values. Invalid responses default to <code>WAIT</code> and never surface a bad value to the user.</p>
+                    </section>
+
+                    <section class="docs-section" id="item-5-3">
+                        <h2 class="section-heading">x402 Payment Gate</h2>
+                        <p>Premium advice is gated behind x402 — an HTTP-native micro-payment protocol. The philosophy is pay-per-query rather than a monthly subscription.</p>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr><th class="theme-bg-light"><code>/signals</code></th><td>Free. Anyone can see ranked markets.</td></tr>
+                                    <tr><th class="theme-bg-light"><code>/advice</code></th><td>Free. Basic AI analysis for all users.</td></tr>
+                                    <tr><th class="theme-bg-light"><code>/premium_advice</code></th><td>Paid. Costs 0.10 USDC per query. Requires payment proof.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>When a user sends <code>/premium_advice</code>, the bot checks whether payment has been verified for that user. If not, it replies with the payment prompt. The user gets an x402 proof string from the payment flow and submits it with <code>/pay &lt;proof&gt;</code>. The backend calls <code>POST /agent/x402/verify</code>, validates the 64-char hex proof, and caches the verification for 24 hours.</p>
+                        <div class="callout-block callout-block-warning">
+                            <div class="content">
+                                <h4 class="callout-title"><span class="callout-icon-holder me-1"><i class="fas fa-bullhorn"></i></span>Demo mode</h4>
+                                <p>In v1, the x402 verifier accepts any valid 64-character hex string. Real on-chain verification via Base RPC is stubbed as <code># TODO</code> in <code>api/advice.py</code>.</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- ═══════════════════════════════════
+                     SECTION 6 — DATA MODELS
+                ═══════════════════════════════════ -->
+                <article class="docs-article" id="section-6">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">Data Models</h1>
+                        <section class="docs-intro">
+                            <p>All data is stored in a single SQLite database at <code>data/assistant.db</code>. Models are defined using SQLModel in <code>services/backend/data/models.py</code>. There are seven tables in total.</p>
+                        </section>
+                    </header>
+
+                    <section class="docs-section" id="item-6-1">
+                        <h2 class="section-heading">Core Tables</h2>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light">Market</th>
+                                        <td>Populated by the market sync loop from Polymarket. Fields: <code>id</code>, <code>question</code>, <code>category</code>, <code>current_odds</code>, <code>previous_odds</code>, <code>volume</code>, <code>avg_volume</code>, <code>is_active</code>, <code>expires_at</code>.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light">AISignal</th>
+                                        <td>Snapshot written after every <code>/signals</code> call. Fields: <code>market_id</code>, <code>prediction</code>, <code>confidence_score</code>, <code>analysis_summary</code>, <code>timestamp</code>.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light">User</th>
+                                        <td>Created when a user first interacts. Fields: <code>wallet_address</code> (unique, indexed), <code>telegram_id</code>, <code>username</code>, <code>created_at</code>.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light">Trade</th>
+                                        <td>Legacy trade table. Fields: <code>user_id</code>, <code>market_id</code>, <code>outcome_selected</code>, <code>bet_amount</code>, <code>odds_at_time</code>, <code>status</code>.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light">Payment</th>
+                                        <td>x402 payment receipts. Fields: <code>user_id</code>, <code>market_id</code>, <code>amount</code>, <code>tx_hash</code> (unique), <code>is_confirmed</code>.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-6-2">
+                        <h2 class="section-heading">Paper Trading Tables</h2>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light">PaperTrade</th>
+                                        <td>Table: <code>paper_trades</code>. Stores all paper trades. Fields: <code>telegram_user_id</code>, <code>market_id</code>, <code>market_question</code>, <code>outcome</code> (YES/NO), <code>shares</code>, <code>price_per_share</code>, <code>total_cost</code>, <code>direction</code> (BUY/SELL), <code>status</code> (OPEN/CLOSED/CANCELLED), <code>tx_hash</code>, <code>pnl</code>.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light">WalletConfig</th>
+                                        <td>Table: <code>wallet_config</code>. Per-user paper wallet. Fields: <code>telegram_user_id</code> (unique), <code>paper_balance</code> (starts at $1,000), <code>total_deposited</code>.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light">LeaderboardSnapshot</th>
+                                        <td>Table: <code>leaderboard_snapshots</code>. Daily stats per user. Fields: <code>telegram_user_id</code>, <code>display_name</code>, <code>portfolio_value</code>, <code>net_pnl</code>, <code>total_trades</code>, <code>win_rate</code>, <code>snapshot_date</code>.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="callout-block callout-block-info">
+                            <div class="content">
+                                <h4 class="callout-title"><span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>Starting balance</h4>
+                                <p>Every new user starts with <code>paper_balance = 1000.0</code> — a $1,000 paper USDC wallet. This is set in <code>WalletConfig</code> on first interaction and never changes unless a trade deducts from it.</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- ═══════════════════════════════════
+                     SECTION 7 — DASHBOARD
+                ═══════════════════════════════════ -->
+                <article class="docs-article" id="section-7">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">Dashboard</h1>
+                        <section class="docs-intro">
+                            <p>The dashboard is a Next.js 14 App Router application in <code>apps/dashboard/</code>. It polls the FastAPI backend and presents live data across six pages. It never talks to Polymarket or the database directly.</p>
+                        </section>
+                    </header>
+
+                    <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Pages &amp; Routes</h2>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr><th class="theme-bg-light"><code>/</code></th><td>Feed — trending signals with filter tabs (All / Hot / Warm / Cool), FeedCards with bet buttons, and OpenClaw chat access.</td></tr>
+                                    <tr><th class="theme-bg-light"><code>/signals</code></th><td>Signals page — same ranked list as the Feed, presented as a scrollable list with links to individual market pages.</td></tr>
+                                    <tr><th class="theme-bg-light"><code>/market/[id]</code></th><td>Individual market detail page — full market data, odds, volume, AI advice panel.</td></tr>
+                                    <tr><th class="theme-bg-light"><code>/leaderboard</code></th><td>Leaderboard — podium for top 3, full ranked table, user's own rank card with XP bar.</td></tr>
+                                    <tr><th class="theme-bg-light"><code>/achievements</code></th><td>Badges — earned vs locked achievement grid, XP ring progress indicator, streak display.</td></tr>
+                                    <tr><th class="theme-bg-light"><code>/trade</code></th><td>Bets — wallet balance / P&amp;L / trade count stats, open positions, full trade history with commit button.</td></tr>
+                                    <tr><th class="theme-bg-light"><code>/profile</code></th><td>Profile — user avatar, trading stats, level/XP, wallet address, username edit, logout.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-7-2">
+                        <h2 class="section-heading">Design System</h2>
+                        <p>The dashboard uses a custom glassmorphism design system defined in <code>app/globals.css</code>. All styling is done via CSS custom properties and utility classes — Tailwind is configured but the project primarily uses named CSS classes.</p>
+
+                        <h5>Color palette:</h5>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr><th class="theme-bg-light"><code>--navy-deep: #0a1628</code></th><td>Page background</td></tr>
+                                    <tr><th class="theme-bg-light"><code>--teal: #2DD4BF</code></th><td>Primary accent — CTAs, active states, glow effects</td></tr>
+                                    <tr><th class="theme-bg-light"><code>--blue: #60A5FA</code></th><td>Secondary accent — odds bars, info states</td></tr>
+                                    <tr><th class="theme-bg-light"><code>--green: #34D399</code></th><td>Positive P&amp;L, win states, live indicator</td></tr>
+                                    <tr><th class="theme-bg-light"><code>--red: #F87171</code></th><td>Negative P&amp;L, loss states</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h5>Typography:</h5>
+                        <ul>
+                            <li><strong>Syne 700/800</strong> — headings, logo, large numbers</li>
+                            <li><strong>DM Mono 400/500</strong> — labels, metadata, stats, monospace data</li>
+                            <li><strong>Plus Jakarta Sans 300–600</strong> — body text, descriptions</li>
+                        </ul>
+                    </section>
+
+                    <section class="docs-section" id="item-7-3">
+                        <h2 class="section-heading">Auth &amp; Telegram</h2>
+                        <p>Authentication is handled by Privy (<code>@privy-io/react-auth</code>). Users can sign in with a wallet or Google. The <code>useAuth</code> hook abstracts the Privy client and exposes <code>isAuthed</code>, <code>walletAddress</code>, <code>user</code>, <code>login</code>, and <code>logout</code>.</p>
+                        <p>The dashboard also supports running as a Telegram WebApp. The <code>useTelegram</code> hook reads <code>window.Telegram.WebApp</code> for user data and haptic feedback. When running in Telegram, the WebApp script is loaded via <code>next/script</code> in <code>layout.jsx</code>. The <code>AuthSync</code> component automatically syncs the Privy wallet address with the backend on first login.</p>
+                    </section>
+                </article>
+
+                <!-- ═══════════════════════════════════
+                     SECTION 8 — TELEGRAM BOT
+                ═══════════════════════════════════ -->
+                <article class="docs-article" id="section-8">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">Telegram Bot</h1>
+                        <section class="docs-intro">
+                            <p>The Telegram bot lives in <code>apps/telegram-bot/</code>. It is the primary user-facing interface for the fast path commands. It never reads from the database directly — all calls go through the FastAPI backend.</p>
+                        </section>
+                    </header>
+
+                    <section class="docs-section" id="item-8-1">
+                        <h2 class="section-heading">Command Reference</h2>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>/trending</code></th>
+                                        <td><strong>Fast path.</strong> Returns the top markets by current volume from the SQLite cache. No AI. Instant response.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>/market &lt;id&gt;</code></th>
+                                        <td><strong>Fast path.</strong> Returns full detail for a single market — odds, volume, category, expiry.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>/signals</code></th>
+                                        <td><strong>Fast path.</strong> Returns the top 20 ranked signals with scores and reason strings. Calls <code>GET /signals/?top=20</code>.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>/portfolio</code></th>
+                                        <td><strong>Fast path.</strong> Returns the user's paper wallet summary — balance, P&amp;L, open trades.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>/papertrade &lt;id&gt; &lt;YES|NO&gt; &lt;amount&gt;</code></th>
+                                        <td><strong>Fast path.</strong> Logs a paper trade. Example: <code>/papertrade market-001 YES 50</code> bets $50 on YES.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>/advice &lt;id&gt;</code></th>
+                                        <td><strong>Agent path.</strong> Calls OpenClaw for free AI analysis of the specified market.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>/premium_advice &lt;id&gt;</code></th>
+                                        <td><strong>Agent path + x402.</strong> Returns premium AI analysis. Requires payment proof first.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><code>/pay &lt;proof&gt;</code></th>
+                                        <td>Submits an x402 payment proof. Calls <code>POST /agent/x402/verify</code>. If valid, unlocks <code>/premium_advice</code> for 24 hours.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-8-2">
+                        <h2 class="section-heading">Bot Architecture</h2>
+                        <p><code>main.py</code> starts the bot and registers all command handlers from <code>commands.py</code>. The bot uses long-polling by default. Each command handler calls the appropriate FastAPI endpoint and formats the JSON response into a readable Telegram message.</p>
+                        <div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title"><span class="callout-icon-holder me-1"><i class="fas fa-thumbs-up"></i></span>Separation of concerns</h4>
+                                <p>The bot contains zero business logic. It only formats requests and responses. All scoring, trading, advice, and verification logic lives in the FastAPI backend. This means the dashboard and the bot always show identical data.</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- ═══════════════════════════════════
+                     SECTION 9 — FAQs
+                ═══════════════════════════════════ -->
+                <article class="docs-article" id="section-9">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">FAQs</h1>
+                        <section class="docs-intro">
+                            <p>Common questions about running, extending, and demoing NORT v1.</p>
+                        </section>
+                    </header>
+
+                    <section class="docs-section" id="item-9-1">
+                        <h2 class="section-heading">General</h2>
+                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Is any real money involved?</h5>
+                        <p>No. NORT v1 is paper trading only. <code>EXECUTION_MODE=PAPER</code> is always on. No real Polymarket trades are placed. The optional <code>COMMIT_TX</code> mode only writes a testnet receipt to Polygon — still no real funds.</p>
+
+                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What does NORT stand for?</h5>
+                        <p>NORT is the product name — it's the brand, not an acronym. The app was named NORT in the codebase from the start.</p>
+
+                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How often does market data update?</h5>
+                        <p>Markets are synced from Polymarket on backend startup, then every 15 minutes via a background task (<code>_market_sync_loop</code>). You can also trigger a manual sync via <code>GET /markets/refresh</code>.</p>
+
+                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I run without a Telegram bot?</h5>
+                        <p>Yes. The dashboard is completely standalone. The Telegram bot is optional — the FastAPI backend and the Next.js dashboard are the core system.</p>
+                    </section>
+
+                    <section class="docs-section" id="item-9-2">
+                        <h2 class="section-heading">Paper Trading</h2>
+                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What is the starting balance?</h5>
+                        <p>Every new user gets $1,000 in paper USDC (<code>paper_balance = 1000.0</code> in <code>WalletConfig</code>). This is set on first interaction and tracked against all trades.</p>
+
+                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How is P&amp;L calculated?</h5>
+                        <p>P&amp;L is stored on the <code>PaperTrade</code> record as <code>pnl</code> when a trade is closed. For open trades, P&amp;L is estimated based on the current market odds vs the entry price. The dashboard reads this from <code>GET /api/wallet/summary</code>.</p>
+
+                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What is the "Commit" button in the dashboard?</h5>
+                        <p>The Commit button calls <code>POST /api/trade/commit</code>, which optionally submits a trade receipt to Polygon testnet and returns a <code>tx_hash</code>. This is a demo feature to show on-chain logging — no real money moves.</p>
+                    </section>
+
+                    <section class="docs-section" id="item-9-3">
+                        <h2 class="section-heading">AI &amp; Payments</h2>
+                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How do I swap the AI model?</h5>
+                        <p>Change the <code>"model"</code> field in <code>services/agent/agent.json</code> to any model supported by OpenRouter (e.g. <code>openai/gpt-4o</code>, <code>mistralai/mistral-7b</code>). No code changes required.</p>
+
+                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Is the x402 payment real?</h5>
+                        <p>In v1, the x402 verifier accepts any valid 64-character hex string. Real on-chain verification (Base network RPC call) is stubbed and marked <code># TODO</code> in <code>services/backend/api/advice.py</code>. For the demo, any 64-char hex works as a proof string.</p>
+
+                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Why does every advice response include a disclaimer?</h5>
+                        <p>It's a hard rule. Every advice response from OpenClaw must include: <em>"This is not financial advice. Paper trading only."</em> The backend enforces this — it's added by <code>parse_response()</code> and cannot be omitted by the LLM.</p>
+
+                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can OpenClaw see my trade history?</h5>
+                        <p>Yes — for free advice, OpenClaw calls <code>get_wallet_summary()</code> as one of its context sources. This lets it tailor advice based on whether you already have an open position in the market.</p>
+                    </section>
+                </article>
+
+                <footer class="footer">
+                    <div class="container text-center py-5">
+                        <small class="copyright">NORT v1.0 · Paper trading only · Built for demo · <span style="color:var(--teal)">EXECUTION_MODE=PAPER</span></small>
+                        <ul class="social-list list-unstyled pt-4 mb-0">
+                            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-github fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-telegram fa-fw"></i></a></li>
+                        </ul>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
     </div><!--//docs-wrapper-->
-   
-       
-    <!-- Javascript -->          
+
     <script src="assets/plugins/popper.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
-    
-    
-    <!-- Page Specific JS -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/plugins/smoothscroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
-    <script src="assets/js/highlight-custom.js"></script> 
-    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
-    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
-    <script src="assets/js/docs.js"></script> 
-
+    <script src="assets/js/highlight-custom.js"></script>
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="assets/js/docs.js"></script>
 </body>
-</html> 
-
+</html>
